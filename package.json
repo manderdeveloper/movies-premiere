@@ -1,0 +1,32 @@
+{
+  "name": "movies-premiere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "NODE_ENV=development nodemon src/server.ts",
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "postbuild": "cd dist && zip -r -qq build.zip ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.44.1",
+    "resend": "^3.2.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "esbuild": "^0.23.1",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.1",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2017",
+    "lib": ["ES2019", "dom"],
+    "rootDir": "./",
+    "outDir": "dist",
+    "declaration": false, 
+    "sourceMap": false,
+    "inlineSources": false,
+    "types": ["node"],
+    "skipLibCheck": true
+  }
+}

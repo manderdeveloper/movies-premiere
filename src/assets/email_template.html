@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrenos de Cine del Mes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        .movie-list {
+            margin: 20px 0;
+        }
+        .day-group {
+            margin-bottom: 30px;
+        }
+        .day-group h2 {
+            color: #333;
+            font-size: 20px;
+            border-bottom: 2px solid #ff5733;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .movie {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .movie img {
+            width: 100px;
+            border-radius: 8px;
+        }
+        .movie-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .movie-title {
+            font-size: 18px;
+            color: #000;
+            margin: 0;
+        }
+        .release-date {
+            font-size: 14px;
+            color: #888;
+        }
+        .cta-button {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color: #333;">Estrenos de Cine del Mes</h1>
+
+        <div class="movie-list">
+            {{movies}}
+        </div>
+
+        <footer class="footer">
+            <p>Recibes este correo porque te suscribiste a nuestra lista de estrenos de cine. <br>Si deseas darte de baja, haz clic <a href="#">aquí</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
